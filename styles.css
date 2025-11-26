@@ -1,0 +1,254 @@
+/*Logo y Menus*/
+.top-header {
+  position: fixed;
+  background-color: rgb(236, 191, 132);
+  width: 85%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 20px;
+}
+.Menu-Horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.Menu-Horizontal li {
+  display: block;
+  color: red;
+  padding: 15px 20px;
+}
+.Menu-Horizontal li:hover {
+  color: black;
+}
+.Menu-Horizontal li a {
+  /*gets rid of the line under the texts*/
+  text-decoration: none;
+}
+.Menu-Vertical {
+  padding: 0;
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 200px;
+  background-color: bisque;
+}
+.Menu-Horizontal li:hover .Menu-Vertical {
+  display: block;
+}
+.Menu-Horizontal :active {
+  display: flex;
+}
+.Menu-Vertical li {
+  /*when hover, it shoes up the color black */
+  color: oragne;
+  padding: 10px;
+}
+/*Seccin Inicio*/
+.seccion-inicio {
+  padding: 60px 20px;
+  background-color: white;
+}
+.cont-gral-inicio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+.cont-ini-texto {
+  flex: 1;
+}
+.cont-ini-texto h2 {
+  color: black;
+  margin-bottom: 15px;
+}
+.cont-ini-texto p {
+  font-size: 20px;
+  color: black;
+  line-height: 1.6;
+}
+.cont-ini-img {
+  text: 1;
+  text-align: center;
+}
+.cont-ini-img img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+/*Seccin Servicio*/
+.seccion-servicios {
+  padding: 60px 20px;
+  background-color: white;
+}
+.cont-gral-servicios {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+.cont-serv-texto {
+  flex: 1;
+}
+.cont-serv-texto h2 {
+  color: black;
+  margin-bottom: 15px;
+}
+.cont-serv-texto p {
+  font-size: 20px;
+  color: black;
+  line-height: 1.6;
+}
+.cont-serv-vid {
+  display: flex;
+  flex-direction: row;
+  text: 1;
+  text-align: center;
+}
+/*SECCION FORMULARIO*/
+.seccion-formulario {
+  background-color: aliceblue;
+  padding: 50px 20px;
+  display: flex; /*se ponga como fila*/
+  justify-content: center;
+}
+.div-cont-formulario {
+  background-color: bisque;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%; /*solo 100% de los 500px*/
+  max-width: 500px;
+}
+.div-cont-formulario h2 {
+  color: brown;
+  margin-bottom: 10px; /*no estar tan pegado con las cajas de texto*/
+}
+.formulario .campo {
+  margin-bottom: 20px;
+}
+.formulario label {
+  display: block;
+  font-size: 600;
+  margin-bottom: 8px;
+}
+.formulario input[type="text"],
+.formulario select {
+  /*se llaman los dos porq se van hacer la misma cosas*/
+  width: 100%;
+  padding: 10px;
+  border: 3px solid #915a03;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.checkbox,
+.lista-radio {
+  list-style: none;
+  padding: 0;
+  margin: 10px;
+}
+.checkbox li,
+.lista-radio li {
+  margin-bottom: 8px;
+}
+.checkbox input,
+.lista-radio input {
+  margin-right: 10px; /*entre el checkbox y el texto*/
+}
+.formulario button {
+  background-color: #292016;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/* Footer general */
+.footer {
+  border-radius: 10px;
+  background-color: #292016; /* Fondo oscuro para contraste */
+  color: white;
+  padding: 2rem 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Contenedor flexible para 3 columnas */
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 2rem;
+}
+
+/* Marca o logotipo */
+.footer-brand {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-logo {
+  width: 60px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+/* Enlaces legales */
+.footer-links {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-links a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin: 0.3rem 0;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+/* Redes sociales con íconos */
+.footer-social {
+  flex: 1;
+  min-width: 200px;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 0.5rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .footer-container {
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-social img {
+    margin-bottom: 0.5rem;
+  }
+}
+.cont-serv-texto {
+  flex-direction: column;
+}

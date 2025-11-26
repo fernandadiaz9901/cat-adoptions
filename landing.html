@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="menu_toggle.css" />
+  </head>
+  <body>
+    
+    <!---logo y meny--->
+    <nav class="top-header">
+      <a href="" class="logo">
+        <img height="90" width="90" src="images/toe beans.png" alt="" />
+      </a>
+       <!-- BOTÓN HAMBURGUESA -->
+
+   <button class="menu-toggle" aria-label="Abrir menú">
+
+    &#9776;
+
+    <!-- Ícono de hamburguesa -->
+
+   </button>
+      <ul class="Menu-Horizontal">
+        <li><a href="">Inicio</a></li>
+        <li>
+          <a href="">
+            Productos
+            <ul class="Menu-Vertical">
+              <li><a href="">Tarjetas</a></li>
+              <!---the a href is for links --->
+              <li><a href="">Prestamos</a></li>
+              <li><a href="">Seguros</a></li>
+              <li><a href="">Pagos</a></li>
+              <li><a href="">Telegiros</a></li>
+            </ul>
+          </a>
+        </li>
+        <li><a href="">Sedes</a></li>
+        <li><a href="">Informacion</a></li>
+        <li><a href="">Contactos</a></li>
+      </ul>
+    </nav>
+    <!---secciones inicio--->
+    <section class="seccion-inicio">
+      <div class="cont-gral-inicio">
+        <div class="cont-ini-texto">
+          <h2>Seccion Inicio</h2>
+          <p>
+            Adopting a cat is important because it saves a life by giving a
+            homeless cat a loving home and frees up space in shelters for other
+            animals in need. It also provides significant health and emotional
+            benefits to the adopter, and by choosing adoption, you are
+            supporting ethical practices and not contributing to the demand for
+            kitten mills.
+          </p>
+       
+        
+
+        <div class="cont-ini-img">
+          <img src="images/cat.png" />
+        </div>
+      </div>
+    </section>
+
+    <!---secciones servicios--->
+    <section class="seccion-servicios">
+      <div class="cont-gral-servicios">
+        <div class="cont-serv-vid">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/0rlS80hRIVQ?si=-fkuj2xe5lRbeFes"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="cont-serv-texto">
+          <h2>Seccion Servicio</h2>
+          <p>
+            Adopting a cat is good for you because it offers significant mental
+            and physical health benefits, such as lower stress and blood
+            pressure, and provides companionship. Cats can also improve heart
+            health, and their purrs may even help with healing. Additionally,
+            adopting a cat is a compassionate act that helps save a life and
+            frees up space in shelters for other animals in need.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--SECCION CONTACTANOS-->>
+    <section class="seccion-formulario">
+      <div class="div-cont-formulario">
+        <h2>Formulario Contactanos !!</h2>
+        <p>Complete todos los campos.</p>
+        <form class="formulario">
+          <!--Input Text-->
+          <div class="campo">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text"id="nombre" name="nombre" placeholder="Ingrese su nombre"></input>
+          </div>
+          <!--Lista Despegable-->
+          <div class="campo">
+            <label for="pais">pais:</label>
+            <select id="pais"name="pais">
+              <option value="">Selccione Pais</option>
+              <option value="colombia">Colombia</option>
+              <option value="brazil">Brazil</option>
+              <option value="mexico">Mexico</option>
+              <option value="argentina">Argentina</option>
+              <option value="paraguay">Paraguay</option>
+            </select>
+          </div>
+          <!--Lista Checkbox-->
+          <div class="campo">
+            <label>Intereses:</label>
+            <ul class ="checkbox"><!--lista-->
+              <li><label><input type="checkbox" name="Intereses" value="perros">Perros</label>
+                <li><label><input type="checkbox" name="Intereses" value="gatos">Gatos</label>
+                  <li><label><input type="checkbox" name="Intereses" value="hamsters">Hamters</label>
+                    <li><label><input type="checkbox" name="Intereses" value="vacas">Vacas</label>
+                      <li><label><input type="checkbox" name="Intereses" value="conejos">Conejos</label>
+            </ul>
+          </div>
+          <!--Lista Radio-->
+          <div class="campo">
+            <label>Genero:</label>
+            <ul class="lista-radio">
+              <li><label><input type="radio" name="Genero" value="masculino">Masculino</label> </li>
+                <li><label><input type="radio" name="Genero" value="femenino">Femenino</label> </li>
+                <li><label><input type="radio" name="Genero" value="no-comentar">No Comentar</label> </li>
+            </ul>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+      <!-- PIE DE PAGINA -->
+
+      <section id="footer">
+        <footer class="footer">
+          <div class="footer-container">
+            <!-- Logo y nombre de sitio -->
+            <div class="footer-brand">
+              <img
+                src="images/senati.png"
+                alt="Logo"
+                class="footer-logo"
+              />
+              <p>SENATI</p>
+              <small>© 2025 Todos los derechos reservados</small>
+            </div>
+  
+            <!-- Enlaces legales -->
+            <div class="footer-links">
+              <h4>Legal</h4>
+              <a href="/Documentos/3.politica-privacidad.pdf"
+                >Política de Privacidad</a
+              >
+              <!-- Dentro de href llama a un documento pdf con la poltica-->
+              <a href="#">Términos y Condiciones</a>
+              <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+              <a href="/pdf/obtenerDocumento.pdf">Protección de Datos</a>
+            </div>
+  
+            <!-- Redes sociales con íconos personalizados -->
+            <div class="footer-social">
+              <h4>Síguenos</h4>
+              <a href="#"
+                ><img
+                  src="images/facebook.png"
+                  alt="Facebook"
+                  class="social-icon"
+              /></a>
+              <a href="#"
+                ><img
+                  src="images/insta.png"
+                  alt="Instagram"
+                  class="social-icon"
+              /></a>
+              <a href="#"
+                ><img
+                  src="images/linked.png"
+                  alt="LinkedIn"
+                  class="social-icon"
+              /></a>
+              <a href="#"
+                ><img
+                  src="images/twitter.png"
+                  alt="Twitter"
+                  class="social-icon"
+              /></a>
+            </div>
+          </div>
+        </footer>
+      </section>
+
+      <script src="menu_toggle.js"></script>
+  </body>
+</html>
